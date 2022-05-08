@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Details for {{products.name}}</h3>
+
+<h4>Description:</h4>
+<p> {{products.description}} </p>
+
+<h2> Ages: </h2>
+
+<p> {{products.age_range}}</p>
+
+<h2>Price: </h2>
+<p>{{products.price}}</p>
+
+<h2> <a href= "{%url 'index'%}"</a>Back</h2>
+
+{% endblock %}
